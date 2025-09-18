@@ -1,0 +1,130 @@
+:root {
+    --color-amarillo-principal: #FFD700;
+    --color-blanco: #FFFFFF;
+    --color-gris-suave: #f4f4f4;
+    --color-gris-oscuro: #555;
+    --color-rosa-pastel: #FFD1DC;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-gris-suave);
+    color: var(--color-gris-oscuro);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--color-blanco);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    color: var(--color-amarillo-principal);
+    margin: 0;
+}
+
+#typed-text {
+    font-size: 1.2em;
+    color: var(--color-gris-oscuro);
+    min-height: 25px; /* Evita que el layout salte */
+}
+
+.story p {
+    font-size: 1.1em;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.story h2 {
+    color: var(--color-rosa-pastel);
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 40px;
+}
+
+.gift {
+    margin-top: 40px;
+}
+
+.flower-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flower-container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.flower-image {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+    animation: fadeInFlower 2s forwards 2s;
+}
+
+.special-photo {
+    width: 300px;
+    height: 400px;
+}
+
+.gift h3 {
+    font-size: 2.5em;
+    color: var(--color-amarillo-principal);
+    font-family: 'Dancing Script', cursive;
+}
+
+.final-message {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--color-gris-oscuro);
+    padding: 0 20px;
+}
+
+.signature {
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+    color: var(--color-rosa-pastel);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--color-gris-oscuro);
+    font-size: 0.9em;
+}
+
+@keyframes fadeInFlower {
+    from {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
